@@ -1,0 +1,252 @@
+
+/* GERALZÃO */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: black;
+    height: 100vh;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.flex{
+    display: flex;
+}
+
+h2.titulo{
+    color: #fff;
+    font-size: 45px;
+    text-align: center;
+
+
+}
+
+
+
+/* ESTILO DO CABEÇALHO */
+header{
+    padding: 40px 4%;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: #7d7d7d;
+    text-decoration: none;
+    display: inline-block;
+    transition: 2s;
+    font-size: 20px;
+}
+
+header a:hover{
+    color: #fff;
+    transform: scale(1.05);
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+header .btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #fff;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+header .btn-contato button :hover{
+    box-shadow: 0 0 8px black;
+    
+}
+
+/*TOPO DO SITE*/
+
+section.topo-do-site{
+    padding: 40px 4%;
+}
+section.topo-do-site.flex{
+    align-items: center;
+    justify-content: center;
+    gap:900px;
+}
+
+.topo-do-site h1{
+    color: #fff;
+    font-size: 45px;
+}
+.topo-do-site .txt-topo-site p{
+    color: #fff;
+
+}
+
+
+.topo-do-site .img-topo-site img{
+    position: relative;
+}
+
+/*ESTILO DA FORMAÇÃO*/
+section.Formação{
+    padding: 40px 4%;
+    margin-top: 100px;
+
+}
+.Formação .Formação-box{
+    color: #fff;
+    padding: 40px 32%;
+    text-align: center;
+    justify-content: center;
+    gap: 20px;
+    font-size: 20px;
+    margin-top: 10px;
+
+}
+
+/*ESTILO DO PORTFÓLIO*/
+
+section.Portfólio{
+    padding: 40px 4%;
+    box-shadow: 0 0 40px 10px #ffffff67;
+    margin-top: 100px;
+}
+.Portfólio .Portfólio-Box{
+    color: #fff;
+    padding: 40px 22%;
+    text-align: center;
+    justify-content: center;
+    gap: 20px;
+    font-size: 20px;
+}
+
+.img-port{
+    padding: 50px 45%;
+    margin: 30px;
+    width: 110px;
+    height: 380px;
+    background-color: black;
+    border-radius: 30px;
+    justify-content: space-around;
+    background-size: cover;
+    background-position: 100% 0%;
+    cursor: pointer;
+    position: relative;
+}
+section.Portfólio .flex{
+    justify-content: space-around;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #12070700;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: black;
+    opacity: 0;
+    transition: .5s;
+}
+
+.overlay:hover{
+    opacity: 1;
+}
+
+/*ESTILO CONTATO*/
+
+section.Contato{
+    padding: 80px 4%;
+    margin-top: 100px;
+}
+
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 50px;
+}
+
+form input, form textarea{
+    width: 100%;
+    background-color: #353535d4;
+    border: 0;
+    outline: 0;
+    padding: 22px 17px;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 19px;
+    font-weight: 400;
+}
+
+form input,::placeholder{
+    color:aquamarine;
+}
+
+form textarea::placeholder{
+    color: aquamarine;
+}
+
+form textarea{
+    resize: none;
+    max-height: 300px;
+}
+
+form .btn-enviar{
+    margin-top: 30px;
+    text-align: center;
+}
+form .btn-enviar input{
+    width: 150px;
+    border-radius: 20px;
+    background-color: aquamarine;
+    font-size: 19px;
+    color: black;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.Portfólio .Portfólio-Box a{
+    color: #fff;
+}
+
+/*RODAPÉ*/
+
+footer{
+    padding: 60px 4%;
+    box-shadow: 0 0 40px 10px #ffffff67;
+    color: #fff;
+
+}
+
+footer .flex{
+    justify-content: space-between;
+    box-shadow: 0 0 40px 10px #000000;
+    font-size: 14PX;
+
+}
